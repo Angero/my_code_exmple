@@ -1,16 +1,17 @@
-# example
+# My Code Example
 
-My code example
+Добрый день!
 
-## Getting Started
+Демонстрационное приложение "Справочник работников компании".
 
-This project is a starting point for a Flutter application.
+Ограничения:
+приложение Flutter on the web,
+авторизационные данные записаны в коде приложения (2 учетные записи email+password в открытом виде), управлять ими не надо,
+элементы используются стандартные, подключать библиотеки или рисовать кастомные элементы необязательно,
+хранение межсессионных данных в secure storage.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Функции приложения:
+1. Логин в систему с валидацией полей (email/password)
+2. Logout из системы
+3. Страница просмотра карточек работников (Выводятся Номер строки, ФИО сотрудника и его телефон)
+4. Страница создания/редактирования/удаления карточки работника (поля Фамилия*, Имя*, Отчество, телефон с маской*, email с маской*, день рождения datepicker*, поле для комментария). Заполненные данные на карточке не должны теряться после обновления состояния приложения. * - поле обязательное для заполнения.
